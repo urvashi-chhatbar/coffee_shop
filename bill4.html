@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Product</title>
+    <link rel="stylesheet" href="Buy product details.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buy Mocho</h1>
+        <div id="product-details">
+            <img src="image/IMG-20240319-WA0003.jpg"alt="mocho"> 
+            <h2> Mocha </h2> 
+            <p>Mocha is a delicious coffee beverage that combines espresso with steamed milk and chocolate syrup, topped with whipped cream. It offers a perfect balance of rich coffee flavor and sweet chocolate indulgence.</p>
+            <p>Price: Rs.300</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <br><br>
+            <button onclick="calculateTotal()">Calculate Total</button>
+        </div>
+    </div>
+
+    <script>
+        function calculateTotal() {
+            const productId = 4; 
+            const productName = "Mocha";
+            const price = 300; 
+
+            const quantityInput = document.getElementById('quantity');
+            const quantity = parseInt(quantityInput.value);
+
+            if (isNaN(quantity) || quantity <= 0) {
+                alert("Please enter a valid quantity.");
+                return;
+            }
+
+            let totalBill = quantity * price;
+
+            // Redirect to a new page with product name, quantity, and total bill as URL parameters
+            window.location.href = `bill.html?productName=${encodeURIComponent(productName)}&quantity=${quantity}&totalBill=${totalBill}`;
+        }
+    </script>
+</body>
+</html>

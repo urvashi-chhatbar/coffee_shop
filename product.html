@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <h1 class="title">Cof<span>fee</span></h1>
+            <p>Coffee Shop</p>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="contact1.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+
+        <!-- Product Cards -->
+        <div class="mycard">
+            <div class="cimg">
+                <img src="image/IMG-20240319-WA0009.jpg" alt="">
+            </div>
+            <div class="cdetail">
+                <h2>1st Product</h2>
+                <p>Cup Of Coffee Latte Leaf</p>
+                <button type="button" onclick="redirectToBuyPage('Buy Coffee Latte Leaf.html')">View product details</button>
+            </div>
+        </div>
+
+        <div class="mycard">
+            <div class="cimg">
+                <img src="image/IMG-20240319-WA0002.jpg" alt="">
+            </div>
+            <div class="cdetail">
+                <h2>2nd Product</h2>
+                <p>Mexican Coffee</p>
+                <button type="button" onclick="redirectToBuyPage('buy Mexican Coffee.html')">View product details</button>
+            </div>
+        </div>
+
+        <div class="mycard">
+            <div class="cimg">
+                <img src="image/IMG-20240319-WA0008.jpg" alt="">
+            </div>
+            <div class="cdetail">
+                <h2>3rd Product</h2>
+                <p>Americano</p>
+                <button type="button" onclick="redirectToBuyPage('buy americano.html')">View product details</button>
+            </div>
+        </div>
+
+        <div class="mycard">
+            <div class="cimg">
+                <img src="image/IMG-20240319-WA0003.jpg" alt="">
+            </div>
+            <div class="cdetail">
+                <h2>4th Product</h2>
+                <p>Mocha</p>
+                <button type="button" onclick="redirectToBuyPage('Buy mocho.html')">View product details</button>
+            </div>
+        </div>
+
+        <div class="mycard">
+            <div class="cimg">
+                <img src="image/IMG-20240319-WA0005.jpg" alt="">
+            </div>
+            <div class="cdetail">
+                <h2>5th Product</h2>
+                <p>Cold Coffee With Ice Cream</p>
+                <button type="button" onclick="redirectToBuyPage('buy Cold Coffee With Icecream.html')">View product details</button>
+            </div>
+        </div>
+
+        <div class="mycard">
+            <div class="cimg">
+                <img src="image/IMG-20240319-WA0004.jpg" alt="">
+            </div>
+            <div class="cdetail">
+                <h2>6th Product</h2>
+                <p>Irish Coffee</p>
+                <button type="button" onclick="redirectToBuyPage('buy Irish Coffee.html')">View product details</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle button redirects -->
+    <script>
+        function redirectToBuyPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+</body>
+</html>

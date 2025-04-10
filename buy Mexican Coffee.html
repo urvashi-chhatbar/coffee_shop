@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Mexican Coffee</title>
+    <link rel="stylesheet" href="Buy product details.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Buy Mexican Coffee</h1>
+        <div id="product-details">
+            <img src="image/IMG-20240319-WA0002.jpg" alt="Mexican Coffee Image"> 
+            <h2>Mexican Coffee</h2> 
+            <p>Experience the richness of Mexican coffee, crafted from the finest beans grown in the highlands of Chiapas, Veracruz, and Oaxaca. Delight your senses with its smooth flavor profile, accented by notes of chocolate, caramel, and citrus.</p>
+            <p>Price: Rs.200</p>
+            <p><strong>Regions:</strong></p>
+            <ul>
+                <li><strong>Chiapas:</strong> Known for its lush landscapes and vibrant indigenous cultures, Chiapas produces some of Mexico's finest coffee beans. Grown in the southernmost part of the country, Chiapas coffee often exhibits a medium body with hints of chocolate and fruity acidity.</li>
+                <li><strong>Veracruz:</strong> Nestled along the Gulf of Mexico, Veracruz is another key coffee-growing region in Mexico. Its coffees are prized for their bright acidity, balanced by a smooth, creamy texture. Expect flavors ranging from citrus to floral, making Veracruz coffee a delightful choice for enthusiasts seeking complexity.</li>
+                <li><strong>Oaxaca:</strong> With its mountainous terrain and rich biodiversity, Oaxaca is celebrated for its organic coffee production. Oaxacan beans are renowned for their full-bodied richness, often accompanied by notes of caramel and spice. This region's commitment to sustainable farming practices adds an extra layer of appeal for conscientious consumers.</li>
+            </ul>
+            <p><strong>Brewing Methods:</strong> Whether you prefer a classic drip brew or the intricate ritual of manual pour-over, Mexican coffee adapts beautifully to various brewing methods. For an authentic experience, consider trying a traditional Mexican coffee recipe such as Café de Olla, infused with cinnamon and piloncillo (unrefined cane sugar) for a truly memorable taste.</p>
+            <button onclick="redirectToBuyPage(1)">Buy Now</button>
+        <script>
+            function redirectToBuyPage(productId) {
+                
+                window.location.href = `bill2.html?s=${productId}`;
+            }
+        </script>
+        </div>
+        
+    </div>
+</body>
+</html>

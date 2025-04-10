@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Mocha</title>
+    <link rel="stylesheet" href="Buy product details.css">
+</head>
+<body>
+    <div class="container">
+        <img src="image/IMG-20240319-WA0003.jpg" id="t4" alt="Mocha Image">
+        <h1>Mocha</h1>
+        <h2>Price: Rs.300</h2>
+       
+        <h2>Description:</h2>
+        <p>Mocha is a delicious coffee beverage that combines espresso with steamed milk and chocolate syrup, topped with whipped cream. It offers a perfect balance of rich coffee flavor and sweet chocolate indulgence.</p>
+
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>Espresso coffee</li>
+            <li>Steamed milk</li>
+            <li>Chocolate syrup</li>
+            <li>Whipped cream</li>
+        </ul>
+        
+        <h2>Preparation Method:</h2>
+        <p>
+            Start by brewing a shot of espresso coffee using your preferred method.<br>
+            Steam the milk until it reaches a creamy texture, ensuring not to overheat.<br>
+            Mix chocolate syrup into the espresso.<br>
+            Pour the steamed milk over the chocolate espresso mixture.<br>
+            Top with whipped cream for a delightful finishing touch.
+        </p>
+
+        <h2>Serving Suggestions:</h2>
+        <p>
+            Enjoy Mocha as a comforting treat on a chilly day or as a decadent dessert coffee.<br>
+            Serve in a warm mug for the perfect cozy experience.
+        </p>
+
+        <h2>Benefits:</h2>
+        <p>Provides a delightful combination of caffeine and chocolate flavor.<br>
+            The milk in the mocha contributes to your daily calcium intake.<br>
+            Enjoying a Mocha can be a satisfying and indulgent experience, perfect for uplifting your mood.
+        </p>
+        <button onclick="redirectToBuyPage(1)">Buy Now</button>
+        <script>
+            function redirectToBuyPage(productId) {
+                // Redirect to the buy page with product ID as URL parameter
+                window.location.href = `bill4.html?s=${productId}`;
+            }
+        </script>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.title, p {
+    color: #333;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(255, 43, 85);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(174, 26, 56);
+}
+
+

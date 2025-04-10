@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact1.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <div class="nav-bar">
+            <h1 class="title">Cof<span>fee</span></h1>
+            <p>Coffee Shop</p>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="product.html">PRODUCT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="container2">
+            <form class="f1" onsubmit="return handleSubmit(event)">
+                <h1>Contact Us Form</h1>
+                <table>
+                    <tr>
+                        <td><label for="firstname">First Name: <span style="color:red;">*</span></label></td>
+                        <td><input type="text" id="firstname" name="firstname" placeholder="First name" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="lastname">Last Name: <span style="color:red;">*</span></label></td>
+                        <td><input type="text" id="lastname" name="lastname" placeholder="Last name" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Email: <span style="color:red;">*</span></label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Email" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="mobile">Mobile No.: <span style="color:red;">*</span></label></td>
+                        <td><input type="text" id="mobile" name="mobile" placeholder="Mobile No" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="message">Type your message here:</label></td>
+                        <td><textarea id="message" name="message" required></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button type="submit">SEND</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); 
+            window.location.href = "contact2.html";
+            return false;
+        }
+    </script>
+</body>
+</html>

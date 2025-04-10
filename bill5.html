@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Product</title>
+    <link rel="stylesheet" href="Buy product details.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buy Cold Coffee With Ice Cream</h1>
+        <div id="product-details">
+            <img src="image/IMG-20240319-WA0005.jpg" alt="Cold Coffee With Ice Cream"> 
+            <h2> Cold Coffee With Ice Cream </h2> 
+            <p>Cold Coffee with Ice Cream is a delightful beverage that combines the rich flavors of coffee with the creamy indulgence of ice cream. Whether enjoyed as a refreshing treat on a hot summer day or as a comforting pick-me-up, this drink never fails to satisfy both coffee and dessert lovers alike.</p>
+            <p>Price: Rs.200</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <br><br>
+            <button onclick="calculateTotal()">Calculate Total</button>
+        </div>
+    </div>
+
+    <script>
+        function calculateTotal() {
+            const productId = 5;
+            const productName = "Cold Coffee With Ice Cream";
+            const price = 200; 
+
+            const quantityInput = document.getElementById('quantity');
+            const quantity = parseInt(quantityInput.value);
+
+            if (isNaN(quantity) || quantity <= 0) {
+                alert("Please enter a valid quantity.");
+                return;
+            }
+
+            let totalBill = quantity * price;
+
+            // Redirect to a new page with product name, quantity, and total bill as URL parameters
+            window.location.href = `bill.html?productName=${encodeURIComponent(productName)}&quantity=${quantity}&totalBill=${totalBill}`;
+        }
+    </script>
+</body>
+</html>
